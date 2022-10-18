@@ -1,9 +1,9 @@
 // User Interface Logic
 window.onload = function() {
-  let h1 = document.querySelector("h1");
-  h1.onmouseover = function() {
-    window.alert("I am a heading element.");
-  };
+  // let h1 = document.querySelector("h1");
+  // h1.onmouseover = function() {
+  //   window.alert("I am a heading element.");
+  // };
 
   let p = document.querySelector("p");
   p.onmouseover = function() {
@@ -23,16 +23,20 @@ window.onload = function() {
   darkModeButton.onclick = function () {
     body.style.backgroundColor = "black";
     body.style.color = "white";
+    darkModeButton.innerText = "Dark Mode: On"
+    lightModeButton.innerText = "Light Mode: Off"
   }
 
   lightModeButton.onclick = function () {
     body.style.backgroundColor = "white";
     body.style.color = "black";
+    darkModeButton.innerText = "Dark Mode: Off"
+    lightModeButton.innerText = "Light Mode: On"
   }
 
   increaseFontButton.onclick = function () {
-    body.style.fontSize = "30px";
-    increaseFontButton.innerHTML = "Large Text Shown"
+    body.style.fontSize = "X-large";
+    increaseFontButton.innerText = "Text Size: Large"
   }
 };
 
