@@ -14,4 +14,21 @@ window.onload = function() {
   img.onmouseover = function() {
     img.style.height = "700px";
   };
+
+  let darkModeButton = document.querySelector("button.dark-mode");
+  let lightModeButton = document.querySelector("button.light-mode");
+  let body = document.body;
+
+  darkModeButton.onclick = function () {
+    body.style.backgroundColor = "black";
+    body.style.color = "white";
+  }
+
+  lightModeButton.onclick = function () {
+    body.style.backgroundColor = "white";
+    body.style.color = "black";
+  }
 };
+
+
+
