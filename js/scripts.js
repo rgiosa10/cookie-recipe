@@ -17,6 +17,7 @@ window.onload = function() {
 
   let darkModeButton = document.querySelector("button.dark-mode");
   let lightModeButton = document.querySelector("button.light-mode");
+  let increaseFontButton = document.querySelector("button.font-increase");
   let body = document.body;
 
   darkModeButton.onclick = function () {
@@ -27,6 +28,11 @@ window.onload = function() {
   lightModeButton.onclick = function () {
     body.style.backgroundColor = "white";
     body.style.color = "black";
+  }
+
+  increaseFontButton.onclick = function () {
+    body.style.fontSize = "30px";
+    increaseFontButton.innerHTML = "Large Text Shown"
   }
 };
 
