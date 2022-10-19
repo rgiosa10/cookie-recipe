@@ -8,10 +8,11 @@ window.onload = function() {
   let p = document.querySelector("p");
   p.onmouseover = function() {
     document.querySelector("p>em").innerText = "Don't be surprised";
+    document.querySelector("p>em").style.color = "red";
   };
 
   let img = document.querySelector("img");
-  img.onmouseover = function() {
+  img.onclick = function() {
     img.style.height = "700px";
   };
 
