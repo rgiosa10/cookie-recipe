@@ -39,6 +39,15 @@ window.onload = function() {
     body.style.fontSize = "X-large";
     increaseFontButton.innerText = "Text Size: Large"
   }
+
+  let fNameInput = querySelector("input.fname");
+  let lNameInput = querySelector("input.lname");
+  let nameSubmitButton = document.querySelector("input.submit");
+
+  nameSubmitButton.onclick = function() {
+    window.alert("You submitted " + fNameInput + " " + lNameInput);
+  }
+
 };
 
 
